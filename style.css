@@ -1,0 +1,111 @@
+* {
+    margin:0%;
+    padding:0%;
+    box-sizing:border-box;
+}
+
+.heading {
+    position:relative;
+    color: #000000;
+    font-size: 2em;
+    margin:0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding:7px;
+    text-align:center;
+    background-color: rgba(121, 121, 121, 0.959);
+}
+
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(165, 3, 180, 0.863);
+}
+
+li.navtab {
+    float: left;
+}
+  
+li.navtab a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+li.navtab a:hover:not(.active) {
+    background-color: #111;
+}
+  
+a.active {
+    background-color: #b8ab00;
+}
+
+.footer {
+    position:absolute;
+    width:100%;
+    left: 0px;
+    bottom: 0px;
+    height: 50px;
+    background-color: rgba(121, 121, 121, 0.959);
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.column {
+    float: left;
+    padding:10px;
+}
+  
+/* Left and right column */
+.column.side {
+    width: 25%;
+}
+  
+/* Middle column */
+.column.middle {
+    width: 50%;
+}
+  
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #000000;
+    font-size: 2em;
+    padding-left: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-bottom: 1px solid #68a5ff;
+    background-color: rgb(192, 192, 192);
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+.job-title {
+    color: #999999;
+    font-weight: bold;
+    text-align:center;
+}
+
+a:link, a:visited {
+    color: #42b1fb;
+}
