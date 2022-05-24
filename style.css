@@ -23,11 +23,11 @@ ul.navbar {
     background-color: rgba(165, 3, 180, 0.863);
 }
 
-li.navtab {
+ul.navbar li {
     float: left;
 }
   
-li.navtab a {
+ul.navbar li a {
     display: block;
     color: white;
     text-align: center;
@@ -35,7 +35,7 @@ li.navtab a {
     text-decoration: none;
 }
   
-li.navtab a:hover:not(.active) {
+ul.navbar li a:hover:not(.active) {
     background-color: #111;
 }
   
@@ -98,6 +98,7 @@ h1 {
 
 h2 {
     font-size: 1.5em;
+    text-decoration: underline;
 }
 
 .job-title {
@@ -109,3 +110,54 @@ h2 {
 a:link, a:visited {
     color: #42b1fb;
 }
+
+ul.profile {
+    position: relative;
+    list-style-type: none;
+    width: 50%;
+}
+
+ul.profile li {
+    height: 150px;
+    margin: 30px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(0,0,0);
+}
+
+ul.profile li img {
+    position: relative;
+    left: 10px;
+    width: 130px;
+    height: 130px;
+    float: left;
+}
+
+ul.profile li .container a {
+    font-size: 1.5em;
+    color: rgb(0, 97, 177);
+    text-decoration:underline;
+}
+
+ul.profile li .container a:hover {
+    font-size: 1.5em;
+    color: rgb(0, 97, 177);
+    text-decoration:none;
+}
+
+ul.profile li .container {
+    padding-left:150px;
+    padding-top:12px;
+}
+
+ul.profile li .container p {
+    padding-top:5px;
+}
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
